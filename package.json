@@ -1,18 +1,11 @@
 {
-  "name": "MERN",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "root",
   "private": true,
+  "version": "1.0.0",
   "workspaces": [
-    "server",
-    "client"
+    "packages/*"
   ],
-  "scripts": {
-    "start": "node server",
-    "dev": "concurrently \"yarn workspace server dev\" \"yarn workspace client dev\""
-  },
   "devDependencies": {
-    "concurrently": "^7.5.0"
+    "lerna": "^6.0.3"
   }
 }
