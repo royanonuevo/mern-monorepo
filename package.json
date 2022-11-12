@@ -1,11 +1,12 @@
 {
-  "name": "root",
   "private": true,
-  "version": "1.0.0",
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace client dev\" \"yarn workspace server dev\""
+  },
   "devDependencies": {
-    "lerna": "^6.0.3"
+    "concurrently": "^7.5.0"
   }
 }
